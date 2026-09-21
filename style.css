@@ -93,7 +93,10 @@ nav ul li a:hover {
 .hero h2 {
     font-size: 58px;
     margin-bottom: 20px;
+    color: #fff8e7;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
+
 
 .hero p {
     font-size: 19px;
