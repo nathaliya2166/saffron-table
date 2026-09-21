@@ -166,11 +166,16 @@ section h2 {
 
 .menu-card {
     background-color: white;
-    padding: 30px;
-    border-radius: 5px;
+    padding: 35px 25px;
+    border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
 .menu-card h3 {
     color: #173b2d;
     font-size: 23px;
@@ -180,6 +185,7 @@ section h2 {
 .menu-card p {
     color: #666;
     margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .menu-card span {
