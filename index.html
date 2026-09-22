@@ -139,27 +139,50 @@
 <!-- Reservation Section -->
 
 <section id="reservation" class="reservation">
-
     <h2>Book a Table</h2>
-
     <p>Reserve your table and enjoy a memorable dining experience.</p>
 
-    <form class="reservation-form">
+    <form class="reservation-form" id="reservationForm">
 
-        <input type="text" placeholder="Your Name" required>
+        <input 
+            type="text" 
+            id="name" 
+            placeholder="Your Name" 
+            required
+        >
 
-        <input type="tel" placeholder="Phone Number" required>
+        <input 
+            type="tel" 
+            id="phone" 
+            placeholder="Phone Number" 
+            required
+        >
 
-        <input type="date" required>
+        <input 
+            type="date" 
+            id="date" 
+            required
+        >
 
-        <input type="time" required>
+        <input 
+            type="time" 
+            id="time" 
+            required
+        >
 
-        <input type="number" placeholder="Number of Guests" min="1" required>
+        <input 
+            type="number" 
+            id="guests" 
+            placeholder="Number of Guests" 
+            min="1" 
+            required
+        >
 
         <button type="submit">Reserve Table</button>
 
     </form>
 
+    <p id="reservationMessage"></p>
 </section>
    
     <section id="contact" class="contact">
