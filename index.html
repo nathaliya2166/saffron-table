@@ -221,23 +221,42 @@
     </footer>
 
     <script>
-        const reservationForm = document.getElementById("reservationForm");
-        const reservationMessage = document.getElementById("reservationMessage");
+    const reservationForm = document.getElementById("reservationForm");
+    const reservationMessage = document.getElementById("reservationMessage");
 
-        reservationForm.addEventListener("submit", function(event) {
-            event.preventDefault();
+    reservationForm.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-            const name = document.getElementById("name").value;
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const guests = document.getElementById("guests").value;
 
-            reservationMessage.textContent =
-                "Thank you, " + name + "! Your table request has been received.";
+        const message =
+            "Hello Saffron Table! I would like to book a table.%0A%0A" +
+            "Name: " + name + "%0A" +
+            "Phone: " + phone + "%0A" +
+            "Date: " + date + "%0A" +
+            "Time: " + time + "%0A" +
+            "Guests: " + guests;
 
-            reservationMessage.style.color = "#173b2d";
-            reservationMessage.style.fontWeight = "bold";
+        const whatsappNumber = "923001234567";
 
-            reservationForm.reset();
-        });
-    </script>
+        const whatsappURL =
+            "https://wa.me/" + whatsappNumber + "?text=" + message;
+
+        reservationMessage.textContent =
+            "Your reservation details are ready. Opening WhatsApp...";
+
+        reservationMessage.style.color = "#173b2d";
+        reservationMessage.style.fontWeight = "bold";
+
+        window.open(whatsappURL, "_blank");
+
+        reservationForm.reset();
+    });
+</script>
 
 </body>
 </html>
