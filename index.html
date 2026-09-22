@@ -220,5 +220,24 @@
 
     </footer>
 
+    <script>
+        const reservationForm = document.getElementById("reservationForm");
+        const reservationMessage = document.getElementById("reservationMessage");
+
+        reservationForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+
+            reservationMessage.textContent =
+                "Thank you, " + name + "! Your table request has been received.";
+
+            reservationMessage.style.color = "#173b2d";
+            reservationMessage.style.fontWeight = "bold";
+
+            reservationForm.reset();
+        });
+    </script>
+
 </body>
 </html>
