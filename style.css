@@ -328,6 +328,11 @@ footer {
     background-color: #d8b56d;
     color: #173b2d;
 }
+ #reservationMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
 @media (max-width: 768px) {
 
    .reservation-form {
