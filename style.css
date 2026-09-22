@@ -367,6 +367,10 @@ footer .copyright {
     text-align: center;
 }
 @media (max-width: 768px) {
+
+     .contact-info {
+        grid-template-columns: 1fr !important;
+    }
     
     nav {
         flex-direction: column;
@@ -420,7 +424,7 @@ footer .copyright {
         grid-column: auto;
     }
 
-    .    .contact-info {
+    .contact-info {
         display: grid;
         grid-template-columns: 1fr !important;
         gap: 0;
@@ -431,8 +435,10 @@ footer .copyright {
         padding: 15px 10px;
     }
 
+     .contact-info h3 {
+        font-size: 20px;
+    }
+
     section {
         padding: 60px 20px;
     }
-
-}
