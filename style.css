@@ -272,9 +272,42 @@ footer {
     background-color: #0e241b;
     color: #ccc;
     text-align: center;
-    padding: 20px;
+    padding: 35px 20px;
 }
 
+footer h3 {
+    color: #d8b56d;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+footer > p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #d8b56d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
 
 /* Mobile Responsive Design */
 
